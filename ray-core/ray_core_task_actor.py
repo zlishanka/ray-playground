@@ -2,6 +2,9 @@ import ray
 
 ray.init()
 
+# Show the ray cluster resources
+print(ray.cluster_resources())
+
 # Running a task
 @ray.remote
 def square(x):
